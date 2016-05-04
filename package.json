@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "0.10.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "linda",
+  "productName": "Linda",
+  "version": "0.1.0",
+  "description": "Electron based GUI for managing npm packages",
   "main": "main.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register --recursive --require ./test/setup.js test/**/*.spec.js",
@@ -76,6 +76,7 @@
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "fbjs-scripts": "^0.6.0",
+    "flow-bin": "^0.24.1",
     "jsdom": "^8.4.0",
     "json-loader": "^0.5.4",
     "minimist": "^1.2.0",
@@ -94,16 +95,22 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
+    "bluebird": "^3.3.5",
     "css-modules-require-hook": "^4.0.0",
     "electron-debug": "^0.6.0",
     "font-awesome": "^4.6.1",
+    "immutable": "^3.8.1",
     "postcss": "^5.0.19",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
+    "react-immutable-proptypes": "^1.7.1",
     "react-redux": "^4.4.5",
     "react-router": "^2.2.4",
     "react-router-redux": "^4.0.2",
     "redux": "^3.4.0",
+    "redux-actions": "^0.9.1",
+    "redux-form": "^5.2.3",
+    "redux-promise": "^0.5.3",
     "redux-thunk": "^2.0.1",
     "source-map-support": "^0.4.0"
   },

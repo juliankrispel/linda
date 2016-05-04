@@ -11,9 +11,11 @@
     "react/prefer-stateless-function": 0,
     "comma-dangle": 0,
     "no-use-before-define": 0,
+    "react/prop-types": 0,
     "consistent-return": 0
   },
   "plugins": [
-    "react"
+    "react",
+    "transform-flow-strip-types"
   ]
 }

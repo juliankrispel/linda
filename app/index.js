@@ -4,14 +4,13 @@ import { Provider } from 'react-redux';
 import { Router, hashHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import routes from './routes';
-import configureStore from './store/configureStore';
+import root from './rootReducer';
 import './app.global.css';
 
-const store = configureStore();
-const history = syncHistoryWithStore(hashHistory, store);
+const history = syncHistoryWithStore(hashHistory, root);
 
 render(
-  <Provider store={store}>
+  <Provider store={root}>
     <Router history={history} routes={routes} />
   </Provider>,
   document.getElementById('root')
